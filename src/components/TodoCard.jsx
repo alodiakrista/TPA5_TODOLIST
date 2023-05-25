@@ -45,6 +45,7 @@ const TodoCard = ({ todo }) => {
           <p>{todo.content}</p>
         )}
       </div>
+      {!todo.completed && (
       <div className="flex gap-3 items-center">
         <button className="btn" onClick={() => setEdit((value) => !value)}>
           <BsFillPencilFill />
@@ -53,6 +54,7 @@ const TodoCard = ({ todo }) => {
           <BsFillTrashFill />
         </button>
       </div>
+      )}
     </div>
   );
 };
