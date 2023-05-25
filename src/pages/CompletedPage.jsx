@@ -13,6 +13,7 @@ const CompletedPage = () => {
                     <TodoCard 
                         key={index}
                         todo={todo}
+                        showEditDelete={false}
                     />
                 ))
             }
